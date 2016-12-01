@@ -1,0 +1,26 @@
+{
+  "name": "mtg-card-fetcher",
+  "version": "1.0.0",
+  "description": "Fetches cards and renders them as Slack Markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marinatedpork/mtg-card-fetcher.git"
+  },
+  "keywords": [
+    "Magic"
+  ],
+  "author": "Matthew Meyers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marinatedpork/mtg-card-fetcher/issues"
+  },
+  "homepage": "https://github.com/marinatedpork/mtg-card-fetcher#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.7.7",
+    "mtgsdk": "^0.1.1"
+  }
+}

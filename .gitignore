@@ -4,6 +4,7 @@ npm-debug.log*
 
 test-info.txt
 module.zip
+.DS_STORE
 
 pids
 *.pid

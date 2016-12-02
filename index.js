@@ -10,7 +10,7 @@ exports.handler = function(event, context) {
     console.log('Received data, attempting to process deserialize', cards);
     Serializer.deserialize(cards, function(result) {
       console.log('Deserialized:', result);
-      response = Renderer(result);
+      var response = Renderer(result);
       console.log('Rendered:', response);
       context.succeed({
         response_type: "in_channel",

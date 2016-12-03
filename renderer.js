@@ -1,4 +1,4 @@
-var symbols = require('symbols');
+var symbols = require('./symbols');
 
 module.exports = function(card) {
   var view = "";

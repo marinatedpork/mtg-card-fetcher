@@ -1,7 +1,7 @@
 #! /usr/local/bin/node
 
 var exec = require('child_process').execSync;
-var lambda = new require('aws-sdk').Lambda;
+var lambda = require('aws-sdk').Lambda;
 var readFile = require('fs').readFileSync;
 
 exec('zip -r module.zip index.js renderer.js serializer.js node_modules');
@@ -18,4 +18,4 @@ function callback(err, data) {
   console.log(err ? ['Error', err, err.stack] : ['Success', data]);
 }
 
-lambda(config).updateFunctionCode(params, callback);
+new lambda(config).updateFunctionCode(params, callback);

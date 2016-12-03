@@ -1,4 +1,4 @@
-var symbols = require('./symbols');
+var Symbols = require('./symbols');
 
 module.exports = function(card) {
   var view = "";
@@ -13,5 +13,5 @@ module.exports = function(card) {
   if (card.loyalty) {
     view += '\nLoyalty: ' + card.loyalty;
   }
-  return symbols(view);
+  return Symbols(view);
 }

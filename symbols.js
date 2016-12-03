@@ -54,6 +54,6 @@ var SYMBOLS = {
 
 module.exports = function(str) {
   return Object.keys(SYMBOLS).reduce(function(a, sym) {
-    return a.replace(sym, SYMBOLS[sym]);
+    return a.replace(new RegExp(sym, 'g'), SYMBOLS[sym]);
   }, str);
 }

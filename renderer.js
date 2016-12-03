@@ -4,7 +4,7 @@ module.exports = function(card) {
   var view = "";
   view += card.imageUrl;
   view += '\n*' + card.name + '*';
-  view += '\nMana cost: ' + (card.manaCost || '').replace(/[{}]/g, '');
+  view += '\nMana cost: ' + (card.manaCost || '');
   view += '\nType: ' + card.type;
   view += '\n' + (card.text || '');
   if (card.power) {

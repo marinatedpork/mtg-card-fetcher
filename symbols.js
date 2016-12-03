@@ -56,7 +56,6 @@ module.exports = function(str) {
   return SYMBOLS.reduce(function(a, sym) {
     var pattern = sym[0];
     var emoji = sym[1];
-    console.log('Pattern:', pattern, 'Symbol:', sym, 'Emoji:', SYMBOLS[sym], 'String:', a);
     return a.replace(pattern, emoji);
   }, str);
 }

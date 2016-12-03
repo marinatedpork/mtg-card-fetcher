@@ -4,14 +4,14 @@ module.exports = function(card) {
   var view = "";
   view += card.imageUrl;
   view += '\n*' + card.name + '*';
-  view += '\nMana cost: ' + (card.manaCost || '');
-  view += '\nType: ' + card.type;
-  view += '\n' + (card.text || '');
+  view += '\n*Mana cost*: ' + (card.manaCost || '');
+  view += '\n*Type*: ' + card.type;
+  view += '\n\n' + (card.text || '') + '\n';
   if (card.power) {
-    view += '\nPower/Toughness: ' + card.power + ' / ' + card.toughness;
+    view += '\n*P/T*: ' + card.power + '/' + card.toughness;
   }
   if (card.loyalty) {
-    view += '\nLoyalty: ' + card.loyalty;
+    view += '\n*Loyalty*: ' + card.loyalty;
   }
   return Symbols(view);
 }

@@ -21,6 +21,7 @@
   "homepage": "https://github.com/marinatedpork/mtg-card-fetcher#readme",
   "devDependencies": {
     "aws-sdk": "^2.7.7",
-    "mtgsdk": "^0.1.1"
+    "mtgsdk": "^0.1.1",
+    "qunit": "^0.9.1"
   }
 }

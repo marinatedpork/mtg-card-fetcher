@@ -4,7 +4,7 @@ var exec = require('child_process').execSync;
 var lambda = require('aws-sdk').Lambda;
 var readFile = require('fs').readFileSync;
 
-exec('zip -r module.zip index.js renderer.js serializer.js node_modules');
+exec('zip -r module.zip index.js renderer.js serializer.js symbols.js node_modules');
 
 var config = { region: 'us-east-1' };
 

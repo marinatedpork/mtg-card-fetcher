@@ -7,13 +7,13 @@ exports.handler = function(event, context) {
   var query = { name: '"' + event.text + '"'};
   console.log('Query:', query);
   MTGClient.where(query).then(function(cards) {
-    console.log('Received data, attempting to process deserialize', cards);
+    console.log('Deserializing:', cards);
     Serializer.deserialize(cards, function(result) {
       console.log('Deserialized:', result);
       var response = Renderer(result);
       console.log('Rendered:', response);
       context.succeed({
-        response_type: "in_channel",
+        response_type: 'in_channel',
         text: response
       });
     });

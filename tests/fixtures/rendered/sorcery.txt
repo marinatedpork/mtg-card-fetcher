@@ -1,0 +1,6 @@
+http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=23216&type=card
+*Coalition Victory*
+*Mana cost*: :3g::w::u::s::r::g:
+*Type*: Sorcery
+
+You win the game if you control a land of each basic land type and a creature of each color.

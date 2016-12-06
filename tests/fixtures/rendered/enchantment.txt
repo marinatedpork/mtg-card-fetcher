@@ -1,0 +1,7 @@
+http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=233183&type=card
+*Stranglehold*
+*Mana cost*: :3g::r:
+*Type*: Enchantment
+
+Your opponents can't search libraries.
+If an opponent would begin an extra turn, that player skips that turn instead.

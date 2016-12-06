@@ -1,0 +1,6 @@
+http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=184550&type=card
+*Helm of Obedience*
+*Mana cost*: :4g:
+*Type*: Artifact
+
+:xg:, :t:: Target opponent puts cards from the top of his or her library into his or her graveyard until a creature card or X cards are put into that graveyard this way, whichever comes first. If a creature card is put into that graveyard this way, sacrifice Helm of Obedience and put that card onto the battlefield under your control. X can't be 0.

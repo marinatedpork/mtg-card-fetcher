@@ -1,0 +1,7 @@
+http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=159092&type=card
+*Force of Will*
+*Mana cost*: :3g::u::u:
+*Type*: Instant
+
+You may pay 1 life and exile a blue card from your hand rather than pay Force of Will's mana cost.
+Counter target spell.

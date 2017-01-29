@@ -1,7 +1,11 @@
 var MTGClient = require('mtgsdk').card;
-var Renderer = require('./renderer');
-var Serializer = require('./serializer');
-var ERROR_MESSAGE = '*No results from the AEther*. (Hint: include all punctuation in the card\'s name, e.g. "narset enlightened master" should be "narset, enlightened master")';
+var MTGCardRenderer = require('mtg-card-renderer');
+var Renderer = MTGCardRenderer.Renderer;
+var Serializer = MTGCardRenderer.Serializer;
+
+function errorMessage(card) {
+  return '*No results for "'+ card + '"*. (Hint: include all punctuation in the card\'s name, e.g. "narset enlightened master" should be "narset, enlightened master")';
+} 
 
 exports.handler = function(event, context) {
   console.log('Received:', event);
@@ -18,7 +22,7 @@ exports.handler = function(event, context) {
       return true;
     });
     if (!success) {
-      context.succeed({ text: ERROR_MESSAGE })
+      context.succeed({ text: errorMessage(event.text) });
     }
   });
 }

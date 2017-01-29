@@ -22,6 +22,7 @@
   "devDependencies": {
     "aws-sdk": "^2.7.7",
     "mtgsdk": "^0.1.1",
-    "qunit": "^0.9.1"
+    "qunit": "^0.9.1",
+    "mtg-card-renderer": "https://github.com/marinatedpork/mtg-card-renderer.git"
   }
 }
